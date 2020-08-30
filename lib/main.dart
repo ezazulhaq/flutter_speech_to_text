@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speech_to_text/screen/speech_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,25 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SpeechScreen(title: 'Flutter Voice'),
-    );
-  }
-}
-
-class SpeechScreen extends StatelessWidget {
-  SpeechScreen({
-    this.title,
-  });
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: Container(),
+      home: SpeechScreen(),
     );
   }
 }
